@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>simple calculator</title>
+  <h2>Chandana</h2>
+</head>
+<body>
+  <script>
+   
+    function add(){
+  var n1=document.getElementById("num1").value;
+  var n2=document.getElementById("num2").value;  
+  var sum= +n1 + +n2;
+  alert(sum);  
+      document.getElementById("resultadd").innerText=sum;
+    }
+       
+    function sub(){
+  var n1=document.getElementById("num1").value;
+  var n2=document.getElementById("num2").value;  
+  var sub= +n1 - +n2;
+  alert(sub);  
+      document.getElementById("resultsub").innerText=sub;
+    }
+    
+    function mul(){
+  var n1=document.getElementById("num1").value;
+  var n2=document.getElementById("num2").value;  
+  var mul= +n1 * +n2;
+  alert(mul);  
+      document.getElementById("resultmul").innerText=mul;
+    }  
+      
+      function divide(){
+  var n1=document.getElementById("num1").value;
+  var n2=document.getElementById("num2").value;  
+  var divide= +n1 / +n2;
+  alert(divide);  
+      document.getElementById("resultdivide").innerText=divide;
+    }
+    
+  </script>
+
+  
+  
+  <form> 
+   Enter number 1 : <input type= "number" id="num1" required>
+   Enter number 2 : <input type= "number" id="num2" required>  
+   <input type ="button" value= "add" onclick= "add();">
+   <input type ="button" value= "sub" onclick= "sub();">
+   <input type ="button" value= "mul" onclick= "mul();"> 
+   <input type ="button" value= "divide" onclick= "divide();">  
+    <div id="resultadd"></div>
+    <div id="resultsub"> </div>
+    <div id="resultmul"></div>
+    <div id="resultdivide"> </div> 
+      
+  
+ 
+  </form>
+</body>
+</html>
